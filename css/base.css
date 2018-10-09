@@ -73,7 +73,7 @@ a {
 
 a:hover,
 a:focus {
-	color: var(--color-link-hover);
+	color: #000;
 	outline: none;
 }
 

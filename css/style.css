@@ -1,10 +1,19 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.content--intro a{
+        position: fixed;
+    top: 40vw;
+    font-size: 50px;
+    border: solid;
+    padding: 10px 20px;
 }
 
 .container_top{
-    background-image: url("../img/top.png");
+    background-image: url("../img/top.jpg");
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -12,7 +21,7 @@
 
 
 .container_main{
-    background-image: url("../img/main.png");
+    background-image: url("../img/main.jpg");
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -188,6 +197,7 @@ transform:rotate(-45deg);
     height: auto;
 }
 
+
 .sns .twitter{
     text-decoration: none;
     position: fixed;
@@ -242,6 +252,7 @@ transform:rotate(-45deg);
 .works_content{
     padding-top: 20vh;
     margin-left: 20vw;
+    padding-bottom: 10vw;
 }
 
 .films{
@@ -265,17 +276,11 @@ transform:rotate(-45deg);
     padding-left: 20vw;
 }
 
-.about img{
-    width: 30vw;
-    height: auto;
-    margin-left: 20vw;
-    margin-top: 5vh;
-}
 
 .about p{
     display: inline-block;
-    width: 30vw;
-    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-left: 60vw;
     padding-left: 2vw;
     font-size: 20px;
     color: #000;
@@ -344,12 +349,14 @@ transform:rotate(-45deg);
 
     .main p{
         margin-top: 50vh;
+        margin-left: 10vw;
         width: auto;
         border: none;
         line-height: 2em;
         font-size: 15px;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
+
     }
 
     .container_bio .logo img {
@@ -375,7 +382,8 @@ transform:rotate(-45deg);
     }
 
     .sns .twitter{
-        right: -60px;
+        font-size: 15px;
+        right: -20vw;
     }
     .sns .twitter .box{
         width: 40px;
@@ -383,7 +391,8 @@ transform:rotate(-45deg);
     }
 
     .sns .instagram{
-        right: -115px;
+        font-size: 15px;
+        right: -37vw;
     }
     .sns .instagram .box{
         width: 40px;
@@ -428,6 +437,14 @@ transform:rotate(-45deg);
         background-size: 100%;
         background-position: center;
         height: 100vh;
+    }
+
+    .content--intro a{
+        position: fixed;
+        top: 120vw;
+        font-size: 20px;
+        border: solid;
+        padding: 10px 20px;
     }
 
 

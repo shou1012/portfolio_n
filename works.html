@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <title>bio</title>
+    <script>
+        $('head').append(
+            '<style>body{display:none;}'
+        );
+        $(window).on("load", function () {
+            $('body').hide().fadeIn(1000);
+        });
+    </script>
 </head>
 <body>
     <div class="container_works">
@@ -33,27 +41,36 @@
         <a class="menu-trigger" href="#"><span>MENU</span><span></span><span></span></a>
         <div class="works_content">
             <div class="films">
-                <iframe src="https://www.youtube.com/embed/BdvnbAI2PjY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <h1>資生堂ウェブムービー「I can be me」　　　　|    9/2017</h1>
+                <iframe src="https://www.youtube.com/embed/dDSCb63QMd0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h1>RICK NOVA - なんとも言えない　　　　| 2018/08/23</h1>
                 <p>Director : Shunsuke Nakamura</p>
-                <p>Music Producer : Riki Kaneda</p>
                 <p>Director of Photography : Shunsuke Nakamura</p>
-                <p>Hair and makeup : Kyoka, Fuko Minohara</p>
+                <p>Hair and makeup : Momoko Hagita</p>
+                <p>Aritst : RICK NOVA</p>
             </div>
             <div class="films">
-                <iframe src="https://www.youtube.com/embed/wJFVOSoKVuA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <h1>BLACK BASS - BUDDHAS ON UBER　　　| 2017/11/08</h1>
+                <iframe src="https://www.youtube.com/embed/y3NfFLOcqUU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h1>ID - Question　　　　| 2018/07/26</h1>
                 <p>Director : Shunsuke Nakamura</p>
                 <p>Director of Photography : Shunsuke Nakamura</p>
-                <p>Aritst : BLACK BASS</p>
-                <p>Special Thanks : 4th FILM, Inc.</p>
+                <p>Aritst : ID</p>
             </div>
             <div class="films">
-                <iframe src="https://www.youtube.com/embed/PW54A3OeugA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <h1>BLACK BASS - GRAPES　　| 2017/12/18</h1>
+                <iframe src="https://www.youtube.com/embed/vubFHSpjSDo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h1>BLACK BASS - LOOOP　　　　|2018/06/27</h1>
+                <p>Director : Shunsuke Nakamura</p>
+                <p>Director of Photography : Shunsuke Nakamura, Akira Polenghi</p>
+                <p>Aritst : BLACK BASS</p>
+            </div>
+            <div class="films">
+                <iframe src="https://www.youtube.com/embed/-T75n99Vz5s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h1>「Switch」　　　　| 2018/05/16</h1>
                 <p>Director : Shunsuke Nakamura</p>
                 <p>Director of Photography : Shunsuke Nakamura</p>
-                <p>Aritst : BLACK BASS</p>
+                <p>Music : Riki Kaneda & Omegasapien</p>
+                <p>Hair and makeup : Momoko Hagita</p>
+                <p>Casts : Len Ito, Yue Mochizuki</p>
+                <p>Special Thanks : トーキョーアナログ （Osami Yabuta)</p>
             </div>
             <div class="films">
                 <iframe src="https://www.youtube.com/embed/5WozLZIisvY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -66,8 +83,27 @@
                 <p>Engineer : KRICK</p>
             </div>
             <div class="films">
-                <iframe src="https://www.youtube.com/embed/-T75n99Vz5s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                <iframe src="https://www.youtube.com/embed/PW54A3OeugA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h1>BLACK BASS - GRAPES　　| 2017/12/18</h1>
+                <p>Director : Shunsuke Nakamura</p>
+                <p>Director of Photography : Shunsuke Nakamura</p>
+                <p>Aritst : BLACK BASS</p>
+            </div>
+            <div class="films">
+                <iframe src="https://www.youtube.com/embed/wJFVOSoKVuA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h1>BLACK BASS - BUDDHAS ON UBER　　　| 2017/11/08</h1>
+                <p>Director : Shunsuke Nakamura</p>
+                <p>Director of Photography : Shunsuke Nakamura</p>
+                <p>Aritst : BLACK BASS</p>
+                <p>Special Thanks : 4th FILM, Inc.</p>
+            </div>
+            <div class="films">
+                <iframe src="https://www.youtube.com/embed/BdvnbAI2PjY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h1>資生堂ウェブムービー「I can be me」　　　　| 2017/10/15</h1>
+                <p>Director : Shunsuke Nakamura</p>
+                <p>Music Producer : Riki Kaneda</p>
+                <p>Director of Photography : Shunsuke Nakamura</p>
+                <p>Hair and makeup : Kyoka, Fuko Minohara</p>
             </div>
         </div>
 </body>
