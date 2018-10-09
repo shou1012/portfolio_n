@@ -64,8 +64,9 @@
 
 .bio{
     width: 26vw;
-    margin-top: 21vh;
-    margin-left: 24vw;
+    position: absolute;
+    top: 20vh;
+    left: 24vw;
     height: auto;
     transition: 0.5s;
 }
@@ -75,8 +76,10 @@
 }
 
 .works{
+    position: absolute;
     width: 28.4vw;
-    margin-left: -5vh;
+    top: 27vh;
+    left: 48vw;
     height: auto;
     transition: 0.5s;
 }
@@ -86,10 +89,11 @@
 }
 
 .contact{
+    position: absolute;
     width: 46.56vw;
     height: auto;
-    margin-left: 22vw;
-    margin-top: 2vh;
+    top: 56vh;
+    left: 22vw;
     transition: 0.5s;
 }
 
@@ -114,8 +118,8 @@
 .menu-trigger span{
     transform: rotate(-180deg);
     text-decoration: none;
-    color: #fff;
-    font-size: 30px;
+    color: #FA10C8;
+    font-size: 50px;
 }
 
 .menu-trigger span:nth-of-type(2)
@@ -251,22 +255,30 @@ transform:rotate(-45deg);
 
 .works_content{
     padding-top: 20vh;
-    margin-left: 20vw;
+    margin-left: 5vw;
     padding-bottom: 10vw;
+    overflow: hidden;
 }
 
 .films{
-    margin-bottom: 10vh;
+    display: inline-block;
+    margin: 10vh 10vh 0 0;
+    height: 40vh;
+    float: left;
 }
 
 .films iframe{
-    width: 50vw;
-    height: 50vh;
+    width: 25vw;
+    height:25vh;
 }
 
 .films h1{
     font-size: 20px;
     font-family: sans-serif;
+}
+
+.films p{
+    font-size: 15px;
 }
 
 .name img{
@@ -279,13 +291,14 @@ transform:rotate(-45deg);
 
 .about p{
     display: inline-block;
-    margin-top: 5vw;
-    margin-left: 60vw;
+    margin-top: 8vw;
+    margin-left: 55vw;
     padding-left: 2vw;
     font-size: 20px;
     color: #000;
     line-height: 3em;
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-weight: bold;
     border-left: solid 10px #000;
 }
 
@@ -298,6 +311,10 @@ transform:rotate(-45deg);
     position: fixed;
     top:0;
     left: 0;
+}
+
+.menu_sp{
+    display: none;
 }
 
 
@@ -315,10 +332,13 @@ transform:rotate(-45deg);
     }
 
     .container_main{
+        position: relative;
         display:none;
     }
 
     .container_main_sp{
+        background-size: cover;
+        width: 100vw;
         display:block;
         background-image: url("../img/main_sp.png");
         background-size: 100%;
@@ -327,20 +347,24 @@ transform:rotate(-45deg);
     }
 
     .bio{
+        position: absolute;
         width: 40vw;
-        margin-top: 31vh;
-        margin-left: 0;
+        top: 33vh;
+        left: 1vw;
     }
 
     .works{
+        position: absolute;
         width: 55vw;
-        margin-left: 0;
+        top: 35vh;
+        left: 43vw;
     }
 
     .contact{
+        position: absolute;
         width: 80vw;
-        margin-top: 8vh;
-        margin-left: 0;
+        top: 55vh;
+        left: 0;
     }
 
     .main img{
@@ -348,15 +372,17 @@ transform:rotate(-45deg);
     }
 
     .main p{
+        color: #fff;
         margin-top: 50vh;
-        margin-left: 10vw;
+        margin-left: 0vw;
+        padding: 20px;
         width: auto;
         border: none;
-        line-height: 2em;
-        font-size: 15px;
-        -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
-
+        line-height: 1.7em;
+        font-size: 13px;
+        background-image: url("../img/bio_p_bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .container_bio .logo img {
@@ -409,6 +435,8 @@ transform:rotate(-45deg);
     }
 
     .works_content{
+        padding-top: 20vh;
+        padding-bottom: 10vw;
         margin-left: 5vw;
     }
 
@@ -433,6 +461,7 @@ transform:rotate(-45deg);
     }
 
     #overlay .menu_sp{
+        position: relative;
         display:block;
         background-size: 100%;
         background-position: center;
@@ -447,5 +476,16 @@ transform:rotate(-45deg);
         padding: 10px 20px;
     }
 
+}
 
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px){
+        .bio{
+            top: 35vh;
+        }
+
+        .works{
+            top: 38vh;
+        }
 }
