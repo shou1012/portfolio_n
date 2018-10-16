@@ -290,16 +290,19 @@ transform:rotate(-45deg);
 
 
 .about p{
+    width: 43vw;
     display: inline-block;
-    margin-top: 8vw;
-    margin-left: 55vw;
-    padding-left: 2vw;
-    font-size: 20px;
-    color: #000;
-    line-height: 3em;
-    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-top: 6vw;
+    margin-left: 53vw;
+    padding: 3vw 1vw 3vw 4vw;
+    font-size: 1.1vw;
+    color: #fff;
+    line-height: 2.1em;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     font-weight: bold;
-    border-left: solid 10px #000;
+    background-image: url(../img/bio_p_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .glitch{
@@ -376,7 +379,7 @@ transform:rotate(-45deg);
         margin-top: 50vh;
         margin-left: 0vw;
         padding: 20px;
-        width: auto;
+        width: 100vw;
         border: none;
         line-height: 1.7em;
         font-size: 13px;
